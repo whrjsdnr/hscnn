@@ -60,7 +60,7 @@ class RGBMatFolderDataset(Dataset):
         if len(keys) == 0:
             raise RuntimeError("No paired files found. Make sure basenames match between RGB and MAT folders.")
 
-        self.pairs = [(rgb_map[k], mat_map[k], k) for k in keys)
+        self.pairs = [(rgb_map[k], mat_map[k], k) for k in keys]
 
     @staticmethod
     def _load_rgb(path: str) -> np.ndarray:
