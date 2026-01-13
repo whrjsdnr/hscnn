@@ -1,0 +1,6 @@
+numpy
+torch
+torchvision
+pillow
+scipy
+h5py
